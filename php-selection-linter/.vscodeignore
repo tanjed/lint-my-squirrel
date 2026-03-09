@@ -1,0 +1,11 @@
+.vscodeignore
+.vsix
+*.vsix
+node_modules/.bin/
+node_modules/**/test/
+node_modules/**/tests/
+node_modules/**/*.md
+node_modules/**/.github/
+node_modules/**/CHANGELOG*
+node_modules/**/LICENSE*
+node_modules/**/README*

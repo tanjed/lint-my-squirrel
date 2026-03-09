@@ -1,8 +1,8 @@
 {
   "name": "php-selection-linter",
   "displayName": "PHP Selection Linter",
-  "description": "Lint selected PHP code with Ctrl+Shift+L",
-  "version": "1.0.0",
+  "description": "Lint selected PHP code with Ctrl+Shift+L - No PHP installation required",
+  "version": "2.0.0",
   "publisher": "local",
   "engines": { "vscode": "^1.75.0" },
   "categories": ["Formatters"],
@@ -23,6 +23,10 @@
         "when": "editorTextFocus && editorLangId == php && editorHasSelection"
       }
     ]
+  },
+  "dependencies": {
+    "prettier": "^3.2.0",
+    "@prettier/plugin-php": "^0.22.0"
   },
   "devDependencies": {
     "@vscode/vsce": "^2.24.0"
