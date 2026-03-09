@@ -5,8 +5,8 @@
 ## Quick Install
 
 ```bash
-git clone https://github.com/your-username/php-selection-linter.git
-cd php-selection-linter
+git clone https://github.com/tanjed/lint-my-squirrel.git
+cd lint-my-squirrel
 bash install.sh /path/to/your/project
 ```
 
