@@ -1,0 +1,30 @@
+{
+  "name": "php-selection-linter",
+  "displayName": "PHP Selection Linter",
+  "description": "Lint selected PHP code with Ctrl+Shift+L",
+  "version": "1.0.0",
+  "publisher": "local",
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Formatters"],
+  "activationEvents": ["onLanguage:php"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "phpSelectionLinter.lint",
+        "title": "PHP: Lint Selected Block"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "phpSelectionLinter.lint",
+        "key": "ctrl+shift+l",
+        "mac": "cmd+shift+l",
+        "when": "editorTextFocus && editorLangId == php && editorHasSelection"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.24.0"
+  }
+}

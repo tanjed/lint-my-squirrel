@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": false,
+  "[php]": {
+    "editor.formatOnSave": false
+  }
+}
